@@ -66,14 +66,18 @@ int guesscard(){ // main function
 			break;
 
 	}
-
-	scanf("%d %c", &guessCarta, &guessNaipe);
+	puts("Tenta adivinhar qual a carta e o seu respetivo naipe\n");
+	puts("*nota_1 -> o seu input deverá ser o número da carta, ou 1 para ÀS, 11 para VALETE(J), 12 para DAMA(Q) e por fim, 13 para REI(K) e com 1 (um) espaço a inicial do naipe*\n");
+	puts("*nota_2 *naipe -> o naipe pode ser paus(input: P), espadas (input: E), copas(input: C) ou ouros(input: O)\n");
+	scanf("%d%c", &guessCarta, &guessNaipe);
 
 	while(guessCarta!=carta && guessNaipe!=naipe) {
-		puts("Tenta adivinhar qual a carta e o seu respetivo naipe\n");
-		puts("*nota_1 -> o seu input deverá ser o número da carta, ou 1 para ÀS, 11 para VALETE(J), 12 para DAMA(Q) e por fim, 13 para REI(K) e com 1 (um) espaço a inicial do naipe*\n");
-		puts("*nota_2 *naipe -> o naipe pode ser paus(input: P), espadas (input: E), copas(input: C) ou ouros(input: O)\n");
-
+		if (tries != 0){
+			puts("Tenta adivinhar qual a carta e o seu respetivo naipe\n");
+			puts("*nota_1 -> o seu input deverá ser o número da carta, ou 1 para ÀS, 11 para VALETE(J), 12 para DAMA(Q) e por fim, 13 para REI(K) e com 1 (um) espaço a inicial do naipe*\n");
+			puts("*nota_2 *naipe -> o naipe pode ser paus(input: P), espadas (input: E), copas(input: C) ou ouros(input: O)\n");
+			scanf("%d%c", &guessCarta, &guessNaipe);
+		}
 		
 		putchar('\n');
 
