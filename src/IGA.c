@@ -96,7 +96,7 @@ void IGA(){
 
            	putchar('\n');
 
-            printf("Adivinha o numero: 1\n");
+            printf("Adivinha o número: 1\n");
             printf("Adivinha a carta: 2\n");
             printf("Jogo do 21: 3\n");
             printf("Jogo do galo (2P): 4\n");
