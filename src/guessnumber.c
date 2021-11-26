@@ -43,18 +43,18 @@ int guessnumber(){ // main function
 			putchar('\n');
 		}
 			
-		if (findX == guessX){
+		if (guessX == findX){
 			puts("Parabéns acertaste!!\n");
 			sleep(1);
 			break;
-		} else if (findX > guessX){
-			++tries;
-			puts("Tenta outra vez, esse número é menor!!\n");
-			sleep(1);
-			clear_console();
-		} else {
+		} else if (guessX > findX){
 			++tries;
 			puts("Tenta outra vez, esse número é maior!!\n");
+			sleep(1);
+			clear_console();
+		} else if (guessX < findX){
+			++tries;
+			puts("Tenta outra vez, esse número é menor!!\n");
 			sleep(1);
 			clear_console();
 		}
