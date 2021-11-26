@@ -45,8 +45,8 @@ int guesscard(){ // main function
 	int tries = 0;
 	char guessNaipe, naipe;
 
-	carta = generateRandomInt(1,13);
-	naipeN = generateRandomInt(1,4);
+	carta = generateRandomInt2(1,13);
+	naipeN = generateRandomInt2(1,4);
 
 	switch(naipeN){
 		case 1:
