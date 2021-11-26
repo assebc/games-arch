@@ -14,7 +14,7 @@
 int main(){
 
 	clear_console();
-	printf("Entering GAMES ARCH(GA).\n");
+	printf("Entering GAMES ARCH(GA)...\n");
 	sleep(2);
 	printf("Loading ...\n");
 	sleep(2);
