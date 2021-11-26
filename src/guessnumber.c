@@ -17,17 +17,32 @@ int generateRandomInt(int min, int max) { // given function
 
 }
 
+int generateRandomInt2(int min, int max) { // given function
+
+	srand((unsigned)time(NULL));
+	return (rand() % ((max)- min)) + min;
+
+}
+
 int guessnumber(){ // main function
 
 	int findX, guessX;
 	int tries = 0;
-	findX = generateRandomInt(0,100);
+	findX = generateRandomInt2(0,100);
 
+	puts("Entre 0 a 100 que número sou?\n");
+	putchar('\n');
 	scanf("%d", &guessX);
+	putchar('\n');
 
 	while(guessX != findX){
-		puts("Entre 0 a 100 que número sou?\n");
-		putchar('\n');
+		if (tries != 0) { 
+			puts("Entre 0 a 100 que número sou?\n");
+			putchar('\n');
+			scanf("%d", &guessX);
+			putchar('\n');
+		}
+			
 		if (findX == guessX){
 			puts("Parabéns acertaste!!\n");
 			sleep(1);
