@@ -274,7 +274,7 @@ char * replicate(char x, int N){
 	return result;
 }
 
-char * spaces(char * s1, char * s2){
+char * spaces(char * s1){
 
 	int num_spaces;
 	char * result = NULL;
