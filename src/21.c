@@ -361,7 +361,7 @@ int twentyone(){ // main function
 		if(rounds == 0){
 			puts("CARTAS JOGADOR:                                        CARTAS MESA: \n");
 			sleep(1);
-			printf("%s%s%s\n", player_card, spaces(player_card, table_card), table_card);
+			printf("%s%s%s\n", player_card, spaces(player_card), table_card);
 			putchar('\n');
 			puts("Deseja pedir mais uma carta?\n");
 			puts("Sim: 1");
@@ -372,7 +372,7 @@ int twentyone(){ // main function
 			
 		} else {
 			if(choice == 1){
-				printf("%s%s%s\n", player_card, spaces(player_card, table_card), table_card);
+				printf("%s%s%s\n", player_card, spaces(player_card), table_card);
 				putchar('\n');
 				puts("Deseja pedir mais uma carta?\n");
 				puts("Sim: 1");
